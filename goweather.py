@@ -17,7 +17,7 @@ reset = Fore.RESET
 
 
 # setup for argparse - grab arguments
-parser = argparse.ArgumentParser(description="Outputs 3 day forcast for given location argument")
+parser = argparse.ArgumentParser(description="Outputs (up to) 3 day forcast for given location argument")
 
 args = parser.add_argument('location', help="city or zipcode string", type=str)
 args = parser.add_argument('-c', '--days-ahead', help='Specify how many days ahead the forcast should be (max 3)', type=str, default='3')
