@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# returns results from web API
+# returns results from the goweather web API
 
 
 import requests as rq
