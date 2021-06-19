@@ -50,9 +50,9 @@ weekdays = {
 # display today's forecast
 print(yellow)
 os.system('date "+%A, %b %e"')
-print(reset + "Temperature: " + green + f"{data_object['temperature']}")
-print(reset + "Wind: " + green + f"{data_object['wind']}")
-print(reset + "description: " + green + f"{data_object['description']}")
+print(green + "Temperature: " + reset + f"{data_object['temperature']}")
+print(green + "Wind: " + reset + f"{data_object['wind']}")
+print(green + "description: " + reset + f"{data_object['description']}")
 
 
 # determine what day of the week it is
