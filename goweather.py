@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# returns results from web API
 
 
 import requests as rq
@@ -8,10 +8,11 @@ import os
 import json as j
 from colorama import Fore
 
+
 # ansi color code sequences
 red = Fore.RED
 green = Fore.GREEN
-yellow = Fore.GREEN
+yellow = Fore.YELLOW
 reset = Fore.RESET
 
 
@@ -74,8 +75,7 @@ else:
 
 
 index = 0
-for _ in range((int(args.days_ahead))):
-    
+for _ in range((int(args.days_ahead))):    
     print(yellow + f"\n{weekdays[day_of_week][index]}" + reset + ": ")
     print(green + "Temp: " + reset + f"{data_object['forecast'][index]['temperature']}")
     print(green + "Wind: " + reset + f"{data_object['forecast'][index]['wind']}")
