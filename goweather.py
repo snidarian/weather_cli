@@ -86,4 +86,3 @@ for _ in range((int(args.days_ahead))):
 
 
 
-
